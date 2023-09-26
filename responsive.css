@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    color: green;
+    margin-top: 5rem;
+    font-size: 1rem;
+}
+p{
+    border:2px solid red;
+    width:200px;
+    height:200px;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+/* tablet view */
+@media screen and (min-width: 768px){
+    h1{
+        color:red;
+        font-size: 2rem;
+    }
+    .section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/* desktop view */
+@media screen and (min-width: 1440px){
+    h1{
+        color:red;
+        font-size: 4rem;
+    }
+
+    .section{ 
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
